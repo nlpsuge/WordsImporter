@@ -25,3 +25,5 @@ Just put WordsImporter.py into 'addons' folder
 # Note
 1. Only support Anki 2.0, I have not tested on Anki 2.1 yet.
 
+# TODO
+- [ ] Support 91dict
