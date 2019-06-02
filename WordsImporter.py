@@ -474,7 +474,8 @@ class ImportWords:
             print(traceback.format_exc())
             # re-do if an exception of httplib.BadStatusLine occur
             self.importWords(note, word)
-        except selenium.common.exceptions.SessionNotCreatedException as e:
+        except (selenium.common.exceptions.SessionNotCreatedException,
+                selenium.common.exceptions.InvalidSessionIdException):
             print('opening url in the new tab')
             print(traceback.format_exc())
 
